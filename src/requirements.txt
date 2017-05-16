@@ -1,8 +1,9 @@
 argparse==1.2.1
 environment_tools==1.1.0
+inotify==0.2.8
 plumbum==1.6.0
 psutil==2.1.1
 PyYAML==3.11
 pyroute2==0.3.4
-paasta-tools==0.56.0
+paasta-tools==0.63.4
 setuptools==33.1.1

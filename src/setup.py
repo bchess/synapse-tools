@@ -18,12 +18,13 @@ setup(
         # if paasta tools ever does a >= we can relax this constraint
         'argparse==1.2.1',
         'environment_tools>=1.1.0,<1.2.0',
+        'inotify >= 0.2.8',
         'plumbum>=1.6.0,<1.7.0',
         'protobuf==2.6.1',
         'psutil>=2.1.1,<2.2.0',
         'PyYAML>=3.11,<4.0.0',
         'pyroute2>=0.3.4,<0.4.0',
-        'paasta-tools==0.56.0',
+        'paasta-tools==0.63.4',
         'setuptools<34',
     ],
     entry_points={
@@ -31,6 +32,7 @@ setup(
             'configure_synapse=synapse_tools.configure_synapse:main',
             'haproxy_synapse_reaper=synapse_tools.haproxy_synapse_reaper:main',
             'synapse_qdisc_tool=synapse_tools.haproxy.qdisc_tool:main',
+            'synapse_firewall_update=synapse_tools.firewall_update:main',
         ],
     },
 )
